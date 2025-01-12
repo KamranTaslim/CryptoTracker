@@ -112,3 +112,18 @@ animation: spin 1s linear infinite;
         transform: rotate(360deg);
     }
 }
+.page-button{
+    margin: 15px 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+.page-button.active{
+    background-color: #4caf50;
+    color: white;
+}
+
+.favourite-icon.favorite{
+    color: gold;
+}
