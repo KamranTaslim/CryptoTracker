@@ -124,6 +124,10 @@ const displayCoins = (coins, currentPage) => {
       <td><i class="fa-solid fa-star favourite-icon ${isFavorite} data-id="${coin.id}"></i></td>
       `;
 
+      row.addEventListener('click', () => {
+     window.open(`coin/coin.html?coinId=${coin.id}`, '_blank');
+      });
+
       row.querySelector('.favourite-icon').addEventListener('click', (event) => {
          event.stopPropagation();
          handleFavClick(coin.id);
@@ -181,6 +185,4 @@ document.addEventListener('DOMContentLoaded', async () => {
       console.log(coins);
       hideShimmer();
    }
-
-
 });

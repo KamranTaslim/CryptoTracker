@@ -10,9 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="favorites.css">
 </head>
-<title>Crypto Dashboard</title>
+<title>Favourites Dashboard</title>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
             <a href="index.html" class="title">Crypto Tracker</a>
         </div>
         <div class="right-nav">
-            <a href="index.html" class="nav-link">Home</a>
+            <a href="../index.html" class="nav-link">Home</a>
             <a href="favorites/favorites.html" class="nav-link">Favourites</a>
             <div class="search-container">
                 <span>
@@ -34,36 +34,29 @@
     </nav>
 
     <main>
-        <table id="crypto-table">
+        <table id="favorites-table">
             <thead>
-               <tr>
-                <th>No.</th>
-                <th>Icon</th>
-                <th>Name</th>
-                <th>Price 
-                    <i id="sort-price-asc" class="fa-solid fa-arrow-up"></i>
-                    <i id="sort-price-desc" class="fa-solid fa-arrow-down"></i>
-                </th>
-                <th>Volume
-
-                    <i id="sort-volume-asc" class="fa-solid fa-arrow-up"></i>
-                    <i id="sort-volume-desc" class="fa-solid fa-arrow-down"></i>
-                </th>
-                <th>Market Cap</th>
-                <th>Favourites</th>
-               </tr>
+                <tr>
+                    <th>Position</th>
+                    <th>Icon</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>24h Volume</th>
+                    <th>Market Cap</th>
+                 
+                </tr>
             </thead>
-            <tbody id="crypto-table-body">
-               
+            <tbody id="favorites-table-body">
+
 
             </tbody>
         </table>
-        <div id ="pagination"></div>
         <div class="shimmer-container">
             <div class="shimmer"></div>
         </div>
+<p id="no-favorites" style="display: none;">There is no liked coins.</p>
     </main>
-    <script src="./Js/app.js"></script>
+    <script src="./favorites.js"></script>
 </body>
 
 </html>
